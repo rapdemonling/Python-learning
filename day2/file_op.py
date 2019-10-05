@@ -21,6 +21,7 @@ for index,line in enumerate(f.readlines()):
     print(line.strip())
 '''
 
+'''
 count = 0
 for line in f:
     if count == 9:
@@ -29,3 +30,5 @@ for line in f:
         continue
     print(line)
     count +=1
+'''
+
