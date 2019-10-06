@@ -21,3 +21,15 @@ def test3(name,**kwargs):
 
 test3('ling',age=20,sex='M')
 test3('yao',age=30,sex='M')
+
+def test(name,age=18,*args,**kwargs):
+    print(name)
+    print(age)
+    print(args)
+    print(kwargs)
+    logger("test")
+
+def logger(source):
+    print("from %s" % source)
+
+test('ling', age=20, sex='M',hobby='basketball')
