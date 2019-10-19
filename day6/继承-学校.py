@@ -1,4 +1,4 @@
-__author__ = "Alex Li"
+__author__ = "George Ling"
 
 class School(object):
     def __init__(self,name,addr):
@@ -57,13 +57,13 @@ class Student(SchoolMember):
         print("%s has paid tution for $%s"% (self.name,amount) )
 
 
-school = School("老男孩IT","沙河")
+school = School("Basketball","美国")
 
-t1 = Teacher("Oldboy",56,"MF",200000,"Linux")
-t2 = Teacher("Alex",22,"M",3000,"PythonDevOps")
+t1 = Teacher("Jordan",45,"PG",200000,"Dunk")
+t2 = Teacher("Kobe",32,"PG",30000,"")
 
-s1 = Student("ChenRonghua",36,"MF",1001,"PythonDevOps")
-s2 = Student("徐良伟",19,"M",1002,"Linux")
+s1 = Student("Geogre",22,"SF",1001,"3 Points")
+s2 = Student("Geogre",22,"PG",1002,"Dunk")
 
 
 t1.tell()

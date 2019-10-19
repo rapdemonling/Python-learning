@@ -1,4 +1,4 @@
-__author__ = "Alex Li"
+__author__ = "George Ling"
 
 class A:
     def __init__(self):

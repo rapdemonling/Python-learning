@@ -1,4 +1,4 @@
-__author__ = "Alex Li"
+__author__ = "George Ling"
 
 
 # class People: 经典类
@@ -22,13 +22,13 @@ class Relation(object):
         print("%s is making friends with %s" % (self.name,obj.name))
         self.friends.append(obj.name)
 class Man(Relation,People):
-    # def __init__(self,name,age,money):
-    #     #People.__init__(self,name,age)
-    #     super(Man,self).__init__(name,age) #新式类写法
-    #     self.money  = money
-    #     print("%s 一出生就有%s money" %(self.name,self.money))
-    def piao(self):
-        print("%s is piaoing ..... 20s....done." % self.name)
+    def __init__(self,name,age,money):
+        People.__init__(self,name,age)
+        super(Man,self).__init__(name,age) #新式类写法
+        self.money  = money
+        print("%s 一出生就有%s money" %(self.name,self.money))
+    def play(self):
+        print("%s is playing ....done." % self.name)
     def sleep(self):
         People.sleep(self)
         print("man is sleeping ")
@@ -36,9 +36,11 @@ class Woman(People,Relation):
     def get_birth(self):
         print("%s is born a baby...." % self.name)
 
-m1 = Man("NiuHanYang",22)
-# w1 = Woman("ChenRonghua",26)
-#
-# m1.make_friends(w1)
-# w1.name = "陈三炮"
-# print(m1.friends[0])
+m1 = Man("Jordan",22,3000)
+m1.eat()
+m1.sleep()
+
+w1 = Woman("Alice",26)
+m1.make_friends(w1)
+w1.name = "Darling"
+print(m1.friends[0])

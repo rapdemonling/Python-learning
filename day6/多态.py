@@ -1,4 +1,4 @@
-__author__ = "Alex Li"
+__author__ = "George Ling"
 
 
 class Animal:
@@ -22,10 +22,10 @@ class Dog(Animal):
         print('Woof! Woof!')
 
 
-d = Dog("陈荣华")
+d = Dog("旺财")
 #d.talk()
 
-c = Cat("徐良伟")
+c = Cat("咪咪")
 #c.talk()
 #
 # def animal_talk(obj):
